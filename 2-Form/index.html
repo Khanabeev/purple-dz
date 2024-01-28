@@ -13,19 +13,23 @@
       </div>
       <div>
         <form action="#" method="get">
-          <input
-            type="text"
-            name="company-name"
-            placeholder="Название вашей компании"
-            required
-          />
-          <input type="text" name="name" placeholder="Имя" />
-          <input type="text" name="surname" placeholder="Фамилия" />
-          <input type="email" name="email" placeholder="E-mail" />
+          <div>
+            <input
+              type="text"
+              name="company-name"
+              placeholder="Название вашей компании"
+              required
+            />
+          </div>
+          <div><input type="text" name="name" placeholder="Имя" /></div>
+          <div><input type="text" name="surname" placeholder="Фамилия" /></div>
+          <div><input type="email" name="email" placeholder="E-mail" /></div>
           <button type="submit">Зарегистрироваться &rarr;</button>
 
-          <input type="checkbox" name="conditions" id="conditions" />
-          <label for="conditions">Я прочитал и принимаю </label>
+          <div>
+            <input type="checkbox" name="conditions" id="conditions" />
+            <label for="conditions">Я прочитал и принимаю </label>
+          </div>
           <a href="#">Условия использования</a>
         </form>
       </div>
