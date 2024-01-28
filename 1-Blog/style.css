@@ -1,0 +1,74 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-color: #374151;
+}
+
+.header__logo-icon {
+  background-color: #4b5563;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.header__logo-title {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+.nav__link {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.search-form__input {
+  background-color: #283241;
+  color: #fff;
+}
+
+.section__info {
+  color: #adb1b7;
+  font-size: 14px;
+}
+
+.section h1 {
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0em;
+}
+
+.author__name {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+
+.author__role {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #7a7f8a;
+}
+
+.article__text {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.article__text--small {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #7a7f8a;
+}
