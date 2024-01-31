@@ -89,13 +89,12 @@ body {
 }
 
 .article__image {
-  width: 896px;
   margin-bottom: 69px;
 }
 
 .article__image img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .article__text {
