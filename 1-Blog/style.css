@@ -89,6 +89,7 @@ body {
 }
 
 .article__image {
+  max-width: 896px;
   margin-bottom: 69px;
 }
 
