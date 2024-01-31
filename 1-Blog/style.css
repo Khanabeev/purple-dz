@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+body,
 h1,
 p,
 ul {
@@ -14,8 +15,6 @@ body {
   font-weight: 400;
   color: #fff;
   background: linear-gradient(#374151, #111827);
-  margin: 0;
-  padding: 72px 180px 77px;
 }
 
 .header {
@@ -74,10 +73,6 @@ body {
   margin-bottom: 31px;
 }
 
-.author__photo {
-  margin-right: 16px;
-}
-
 .author__name {
   font-size: 16px;
   line-height: 28px;
@@ -94,7 +89,13 @@ body {
 }
 
 .article__image {
+  width: 896px;
   margin-bottom: 69px;
+}
+
+.article__image img {
+  width: 100%;
+  height: 100%;
 }
 
 .article__text {
