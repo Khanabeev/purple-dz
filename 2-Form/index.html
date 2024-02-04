@@ -1,36 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Форма регистрации</title>
   </head>
   <body>
-    <div>
-      <div>
-        <h1>Регистрация</h1>
-        <div>Уже есть аккаунт? <a href="#">Войти</a></div>
+    <div class="registration">
+      <div class="registration__container">
+        <h1 class="registration__title">Регистрация</h1>
+        <div class="registration__login-link">
+          Уже есть аккаунт? <a href="#" class="registration__link">Войти</a>
+        </div>
       </div>
-      <div>
-        <form action="#" method="get">
-          <div>
+      <div class="registration__form-container">
+        <form action="#" method="get" class="registration-form">
+          <div class="registration-form__field">
             <input
               type="text"
               name="company-name"
               placeholder="Название вашей компании"
               required
+              class="registration-form__input"
             />
           </div>
-          <div><input type="text" name="name" placeholder="Имя" /></div>
-          <div><input type="text" name="surname" placeholder="Фамилия" /></div>
-          <div><input type="email" name="email" placeholder="E-mail" /></div>
-          <button type="submit">Зарегистрироваться &rarr;</button>
-
-          <div>
-            <input type="checkbox" name="conditions" id="conditions" />
-            <label for="conditions">Я прочитал и принимаю </label>
+          <div class="registration-form__field--flex-row">
+            <input
+              type="text"
+              name="name"
+              placeholder="Имя"
+              class="registration-form__input"
+            />
+            <input
+              type="text"
+              name="surname"
+              placeholder="Фамилия"
+              class="registration-form__input"
+            />
           </div>
-          <a href="#">Условия использования</a>
+
+          <div class="registration-form__field">
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="registration-form__input"
+            />
+          </div>
+          <button type="submit" class="registration-form__submit">
+            Зарегистрироваться
+            <img
+              src="images/arrow.svg"
+              alt="arrow"
+              class="registration-form__submit-icon"
+            />
+          </button>
+
+          <div class="registration-form__agreement">
+            <input
+              type="checkbox"
+              name="conditions"
+              id="conditions"
+              class="registration-form__checkbox"
+            />
+            <label for="conditions" class="registration-form__label"
+              >Я прочитал и принимаю
+            </label>
+            <a href="#" class="registration-form__terms-link"
+              >Условия использования</a
+            >
+          </div>
         </form>
       </div>
     </div>
