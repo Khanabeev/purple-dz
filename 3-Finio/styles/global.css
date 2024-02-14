@@ -34,11 +34,8 @@ img {
   height: auto;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-}
-
 :root {
+  --color-bg: #fff;
   --color-primary: #357efe;
   --color-grey-light: #f1f2f5;
   --color-grey: #a6aebd;
@@ -46,26 +43,34 @@ body {
   --color-white: #fff;
   --color-tag: #1abc9c;
   --color-highlighted: #ffc736;
+  --color-menu-link: #d7e5ff;
 
   --color-text: #000;
   --color-text-invert: #fff;
+
   --radius-8: 8px;
+  --radius-16: 16px;
   --radius-47: 47px;
 
+  --text-10: 0.625rem;
   --text-15: 0.938rem;
   --text-17: 1.063rem;
+  --text-18: 1.125rem;
+  --text-24: 1.5rem;
+  --text-28: 1.75rem;
   --text-32: 2rem;
+  --text-36: 2.25rem;
+  --text-40: 2.5rem;
   --text-48: 3rem;
 
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
   --font-extra-bold: 800;
+  --font-black: 900;
 }
 
-.text--semi_bold {
-  font-weight: var(--font-semi-bold);
-}
-.text--extra_bold {
-  font-weight: var(--font-extra-bold);
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--color-bg);
 }
