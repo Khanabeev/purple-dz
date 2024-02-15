@@ -161,7 +161,6 @@
   gap: 78px;
   padding: 120px 0;
   border-bottom: 1px solid var(--color-grey-light);
-  margin-bottom: 80px;
 }
 .security_perk__item {
   max-width: 403px;
@@ -198,7 +197,6 @@
   display: flex;
   gap: 74px;
   padding: 0 95px;
-  margin-bottom: 80px;
 }
 .support__image {
   align-self: flex-end;
@@ -249,7 +247,6 @@
   column-gap: 24px;
   max-width: 1156px;
   margin: 0 auto;
-  margin-bottom: 80px;
 }
 
 /* Card */
@@ -421,7 +418,7 @@
   line-height: 140%;
 }
 .testimonials__image img {
-  border-radius: 0 var(--radius-16) var(--radius-16) 0;
+  border-radius: 0 var(--radius-8) var(--radius-8) 0;
   height: 100%;
 }
 

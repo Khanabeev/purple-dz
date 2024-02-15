@@ -36,9 +36,11 @@ img {
 
 :root {
   --color-bg: #fff;
+  --color-bg-dark: #1a1d25;
   --color-primary: #357efe;
   --color-grey-light: #f1f2f5;
   --color-grey: #a6aebd;
+  --color-menu-footer: #8c8e92;
   --color-grey-dark: #4e5d7c;
   --color-white: #fff;
   --color-tag: #1abc9c;
