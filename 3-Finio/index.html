@@ -15,6 +15,7 @@
     <title>Finio</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header__wrapper">
         <a href="#" class="header__logo text--uppercase"> Finio </a>
@@ -34,9 +35,15 @@
             </li>
           </ul>
         </nav>
-        <button class="button button--12x32">Личный кабинет</button>
+        <button class="button button--12x32 button__account">
+          Личный кабинет
+        </button>
+        <div class="hamburger-icon">
+          <img src="./images/menu.svg" alt="иконка меню" />
+        </div>
       </div>
     </header>
+    <!-- Hero -->
     <section class="section section--primary">
       <div class="section__wrapper">
         <div class="hero">
@@ -64,6 +71,8 @@
       </div>
       <div class="hero__diagonal"></div>
     </section>
+
+    <!-- Perks -->
     <section class="section">
       <div class="section__wrapper">
         <div class="perk">
@@ -88,6 +97,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Possibilities -->
     <section class="section">
       <div class="section__wrapper">
         <div class="possibilities">
@@ -105,7 +116,7 @@
 
             <div class="possibilities__image">
               <img
-                src="./images/perks/kassoviy.png"
+                src="./images/perks/kassoviy2.png"
                 alt="баланс на конец месяца изображение"
               />
             </div>
@@ -169,6 +180,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Accounting -->
     <section class="section section--primary">
       <div class="section__wrapper">
         <div class="accounting">
@@ -234,7 +247,6 @@
         </div>
       </div>
     </section>
-
     <section class="section">
       <div class="section__wrapper">
         <div class="security_perks">
@@ -276,23 +288,27 @@
         </div>
       </div>
     </section>
-    <section class="section">
+
+    <!-- Mobile version -->
+    <section class="section section--no-margin">
       <div class="section__wrapper">
-        <div class="mobile_version">
-          <h2 class="section__title">Мобильная версия</h2>
-          <div class="section__description">
-            Пользоваться всем функционалом сервиса удобно в любом месте и с
-            любых устройств
-          </div>
-          <img
-            src="./images/mobile-example.png"
-            alt="пример мобильной версии изображение"
-          />
+        <h2 class="section__title">Мобильная версия</h2>
+        <div class="section__description">
+          Пользоваться всем функционалом сервиса удобно в любом месте и с любых
+          устройств
         </div>
+        <div class="mobile_version"></div>
       </div>
     </section>
+    <div class="mobile_version__image">
+      <img
+        src="./images/mobile-example.png"
+        alt="пример мобильной версии изображение"
+      />
+    </div>
 
-    <section class="section">
+    <!-- Support -->
+    <section class="section support__section">
       <div class="section__wrapper">
         <div class="support">
           <div class="support__image">
@@ -336,6 +352,7 @@
       </div>
     </section>
 
+    <!-- Tariffs -->
     <section class="section">
       <div class="section__wrapper">
         <h2 class="section__title">Тарифы</h2>
@@ -373,11 +390,11 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--with-tag">
             <div class="card__tag">
               <span class="text--semi_bold">Выгода</span> 25%
             </div>
-            <div class="card__title card--with-tag">6 месяцев</div>
+            <div class="card__title">6 месяцев</div>
             <div class="card__subtitle">
               Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт
             </div>
@@ -404,11 +421,11 @@
             </div>
           </div>
 
-          <div class="card card--primary">
+          <div class="card card--primary card--with-tag">
             <div class="card__tag">
               <span class="text--semi_bold">Выгода</span> 50%
             </div>
-            <div class="card__title card--with-tag">12 месяцев</div>
+            <div class="card__title">12 месяцев</div>
             <div class="card__subtitle card__subtitle--primary">
               Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и хочет
               сэкономить
@@ -439,6 +456,7 @@
       </div>
     </section>
 
+    <!-- Testimonials -->
     <section class="section">
       <div class="section__wrapper">
         <h2 class="section__title">Отзывы</h2>
@@ -459,6 +477,9 @@
               alt="изображение автора отзыва"
             />
           </div>
+          <div class="testimonials__dots">
+            <img src="./images/dots.svg" alt="навигация для отзывов" />
+          </div>
           <div class="testimonials__chevron-left">
             <img src="./images/chevron-left.svg" alt="иконка шеврона левого" />
           </div>
@@ -471,6 +492,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__body">

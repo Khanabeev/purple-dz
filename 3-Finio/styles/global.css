@@ -50,6 +50,8 @@ img {
   --color-text: #000;
   --color-text-invert: #fff;
 
+  --color-white-16: rgba(255, 255, 255, 0.16);
+
   --radius-8: 8px;
   --radius-16: 16px;
   --radius-47: 47px;
