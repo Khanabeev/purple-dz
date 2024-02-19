@@ -72,7 +72,6 @@
 }
 
 /* Section */
-
 .section {
   position: relative;
   margin-bottom: 80px;
@@ -173,7 +172,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .table__sell--highlighted {
     font-size: var(--text-17);
     font-weight: var(--font-bold);
@@ -315,9 +314,6 @@
   margin-bottom: 32px;
 }
 
-@media (max-width: 1200px) {
-}
-
 @media (max-width: 1024px) {
   .footer__body {
     grid-template-columns: 1fr;
@@ -336,7 +332,4 @@
     align-items: flex-start;
     gap: 24px;
   }
-}
-
-@media (max-width: 375px) {
 }
