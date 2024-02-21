@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --color-bg: #fff;
+  --color-bg-dark: #1a1d25;
+  --color-primary: #357efe;
+  --color-grey-light: #f1f2f5;
+  --color-grey: #a6aebd;
+  --color-menu-footer: #8c8e92;
+  --color-grey-dark: #4e5d7c;
+  --color-white: #fff;
+  --color-tag: #1abc9c;
+  --color-highlighted: #ffc736;
+  --color-menu-link: #d7e5ff;
+
+  --color-text: #000;
+  --color-text-invert: #fff;
+
+  --color-white-16: rgba(255, 255, 255, 0.16);
+
+  --radius-8: 8px;
+  --radius-16: 16px;
+  --radius-47: 47px;
+
+  --text-10: 0.625rem;
+  --text-15: 0.938rem;
+  --text-17: 1.063rem;
+  --text-18: 1.125rem;
+  --text-24: 1.5rem;
+  --text-28: 1.75rem;
+  --text-32: 2rem;
+  --text-36: 2.25rem;
+  --text-40: 2.5rem;
+  --text-48: 3rem;
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+  --font-black: 900;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--color-bg);
+}
