@@ -34,7 +34,3 @@ const dates = [
   "a1=01=2021",
 ];
 console.log(filterValidDate(dates)); //[ '10-11-2023', '10-11-2023', '01-01-2021' ]
-
-let str = "How are you?";
-str = str.padStart(1, "%");
-console.log(str);
