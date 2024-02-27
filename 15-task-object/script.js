@@ -14,7 +14,7 @@ const todoList = {
 
   add: function (task) {
     const newId = this.tasks.length
-      ? Math.max(...this.tasks.map((el) => el.id)) + 1
+      ? Math.max(this.tasks.map((el) => el.id)) + 1
       : 1;
     task = { id: newId, ...task };
 
