@@ -1,3 +1,5 @@
+"use strict";
+
 let num1 = document.querySelector('input[name="num-1"]');
 let num2 = document.querySelector('input[name="num-2"]');
 let result = document.querySelector(".result");
