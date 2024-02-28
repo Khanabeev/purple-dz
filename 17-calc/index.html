@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Calculator</h1>
+      <div class="calculator">
+        <div class="calculator__display">
+          <div class="display num-1">
+            <input
+              type="number"
+              name="num-1"
+              placeholder="0"
+              class="display-input"
+            />
+          </div>
+          <div class="display num-2">
+            <input
+              type="number"
+              name="num-2"
+              placeholder="0"
+              class="display-input"
+            />
+          </div>
+          <div class="display result-display">
+            <div>Result</div>
+            <div class="result">0</div>
+          </div>
+        </div>
+        <div class="calculator__btns">
+          <div class="btn" onclick="plus()">+</div>
+          <div class="btn" onclick="minus()">-</div>
+          <div class="btn" onclick="multiply()">*</div>
+          <div class="btn" onclick="divide()">/</div>
+          <div class="btn reset" onclick="reset()">Reset</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
