@@ -14,23 +14,31 @@ document.querySelectorAll("input").forEach((el) => {
 });
 
 function reset() {
+  resetNums();
+  result.innerText = 0;
+}
+
+function resetNums() {
   num1.value = "";
   num2.value = "";
-  result.innerText = 0;
 }
 
 function plus() {
   result.innerText = Number(num1.value) + Number(num2.value);
+  resetNums();
 }
 
 function minus() {
   result.innerText = Number(num1.value) - Number(num2.value);
+  resetNums();
 }
 
 function multiply() {
   result.innerText = Number(num1.value) * Number(num2.value);
+  resetNums();
 }
 
 function divide() {
   result.innerText = (Number(num1.value) / Number(num2.value)).toFixed(2);
+  resetNums();
 }
