@@ -13,32 +13,30 @@ document.querySelectorAll("input").forEach((el) => {
   });
 });
 
-function reset() {
-  resetNums();
-  result.innerText = 0;
-}
-
-function resetNums() {
+function calculate(action) {
+  let n1 = Number(num1.value);
+  let n2 = Number(num2.value);
+  let res = 0;
+  switch (action) {
+    case "plus":
+      res = n1 + n2;
+      break;
+    case "minus":
+      res = n1 - n2;
+      break;
+    case "multiply":
+      res = n1 * n2;
+      break;
+    case "divide":
+      res = (n1 / n2).toFixed(2);
+      break;
+    case "reset":
+      result.innerText = 0;
+      break;
+    default:
+      throw new Error(`Неизвестное выражение`);
+  }
+  result.innerText = res;
   num1.value = "";
   num2.value = "";
-}
-
-function plus() {
-  result.innerText = Number(num1.value) + Number(num2.value);
-  resetNums();
-}
-
-function minus() {
-  result.innerText = Number(num1.value) - Number(num2.value);
-  resetNums();
-}
-
-function multiply() {
-  result.innerText = Number(num1.value) * Number(num2.value);
-  resetNums();
-}
-
-function divide() {
-  result.innerText = (Number(num1.value) / Number(num2.value)).toFixed(2);
-  resetNums();
 }
