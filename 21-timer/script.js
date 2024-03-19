@@ -20,6 +20,7 @@ function formatString(months, days, hours, minutes, seconds) {
   return formattedParts.join(", ");
 }
 const newYear = new Date(new Date().getFullYear(), 11, 31);
+
 setInterval(() => {
   const now = new Date();
   let distance = newYear - now;
