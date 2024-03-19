@@ -19,7 +19,7 @@ function formatString(months, days, hours, minutes, seconds) {
 
   return formattedParts.join(", ");
 }
-const newYear = new Date(new Date().getFullYear(), 11, 31);
+const newYear = new Date(new Date().getFullYear(), 11, 31, 23, 59, 59);
 
 setInterval(() => {
   const now = new Date();
