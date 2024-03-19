@@ -23,13 +23,13 @@ const newYear = new Date(new Date().getFullYear(), 11, 31, 23, 59, 59);
 
 setInterval(() => {
   const now = new Date();
-  let distance = newYear - now;
-  let months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
+  let diff = newYear - now;
+  let months = Math.floor(diff / (1000 * 60 * 60 * 24 * 30));
   let days = Math.floor(
-    (distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
+    (diff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
   );
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
   console.log(formatString(months, days, hours, minutes, seconds));
 }, 1000);
