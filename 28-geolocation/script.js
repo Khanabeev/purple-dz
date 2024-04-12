@@ -14,6 +14,8 @@ function getGeolocation() {
   });
 }
 
-getGeolocation().then((position) => {
-  console.log(position.coords.latitude, position.coords.longitude);
-});
+getGeolocation()
+  .then((position) => {
+    console.log(position.coords.latitude, position.coords.longitude);
+  })
+  .catch((error) => console.log(error));
