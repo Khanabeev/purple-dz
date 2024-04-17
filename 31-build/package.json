@@ -1,0 +1,17 @@
+{
+  "name": "31-build",
+  "version": "1.0.0",
+  "description": "User tasks app",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "rollup src/app.js --file ./build/bundle.js --format es",
+    "start": "live-server --verbose",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "rollup": "^4.14.2"
+  }
+}
