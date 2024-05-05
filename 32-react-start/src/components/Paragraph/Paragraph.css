@@ -1,0 +1,10 @@
+.paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #8e95a9;
+}
+
+.paragraph__secondary {
+  font-size: 16px;
+}
