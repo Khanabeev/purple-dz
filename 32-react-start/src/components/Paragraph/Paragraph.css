@@ -1,8 +1,9 @@
 .paragraph {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 150%;
   color: #8e95a9;
+  padding-bottom: 24px;
 }
 
 .paragraph__secondary {
