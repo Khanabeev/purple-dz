@@ -13,6 +13,7 @@
     -moz-osx-font-smoothing: grayscale;
 
     --padding-container: 0 50px;
+    --color-primary: #7B6EF6;
 }
 
 html {

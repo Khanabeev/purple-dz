@@ -1,0 +1,7 @@
+.film__container {
+    padding: var(--padding-container);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+    row-gap: 16px;
+    column-gap: 24px;
+}
