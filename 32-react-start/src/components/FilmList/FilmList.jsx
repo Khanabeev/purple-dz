@@ -6,12 +6,12 @@ import Heading from "../Heading/Heading.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
 
 function FilmList({items}) {
-    const isItemsNotExists = items.length === 0 || typeof items === "undefined";
 
-    if (isItemsNotExists) {
+    if (!items) {
         return <div className={styles['film__container--center']}>
             <Heading text='Упс... Ничего не найдено'/>
-            <Paragraph type='secondary' text='Попробуйте изменить запрос или ввести более точное название фильма'></Paragraph>
+            <Paragraph type='secondary'
+                       text='Попробуйте изменить запрос или ввести более точное название фильма'></Paragraph>
         </div>
     }
 
