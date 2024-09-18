@@ -1,24 +1,20 @@
-import './FilmCard.css';
+import styles from "./FilmCard.module.css";
 import PropTypes from "prop-types";
+import Rating from "../Rating/Rating.jsx";
+import Favorite from "../../Favorite/Favorite.jsx";
 
 function FilmCard({imgSrc, title, rating}) {
     return (
-        <div className='film-card'>
-            <div className='film-card__rating'>
-                <img className='film-card__star' src="/icons/star.svg" alt="рейтинг"/>
-                <div>{rating}</div>
-            </div>
-            <div className='film-card__img'>
+        <div className={styles['film-card']}>
+            <Rating rating={rating} onClick={() => {console.log('rating clicked')}} />
+            <div className={styles['film-card__img']}>
                 <img src={imgSrc} alt='обложка фильма'/>
             </div>
-            <div className='film-card__info'>
-                <div className='film-card__title'>
+            <div className={styles['film-card__info']}>
+                <div className={styles['film-card__title']}>
                     {title}
                 </div>
-                <div className='film-card__favorite'>
-                    <img src="/icons/like.svg" alt="в избранное"/>
-                    <div>В избранное</div>
-                </div>
+            <Favorite onClick={() => {console.log('favorite clicked')}} />
             </div>
 
         </div>
