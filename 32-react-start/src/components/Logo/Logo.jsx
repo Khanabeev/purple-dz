@@ -1,9 +1,8 @@
 import React from 'react';
-import './Logo.css';
-
+import styles from './Logo.module.css';
 function Logo() {
     return (
-        <div className="logo">
+        <div className={styles['logo']}>
             <img src="/icons/bookmark.svg" alt="логотип"/>
         </div>
 

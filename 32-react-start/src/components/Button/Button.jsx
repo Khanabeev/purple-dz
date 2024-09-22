@@ -1,8 +1,8 @@
-import "./Button.css";
-import PropTypes from "prop-types";
+import styles from './Button.module.css';
+
 
 function Button({ text, onClick }) {
-  return <button className="button" onClick={onClick}>{text}</button>;
+  return <button className={styles['button']} onClick={onClick}>{text}</button>;
 }
 
 export default Button;

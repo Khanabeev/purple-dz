@@ -17,7 +17,7 @@ function FilmList({items}) {
 
     return (
         <div className={styles['film__container']}>
-            {items?.map((item, index) => (
+            {items?.map((item) => (
                 <FilmCard key={item.id} imgSrc={item.imgSrc} title={item.title} rating={item.rating}/>
             ))}
         </div>
