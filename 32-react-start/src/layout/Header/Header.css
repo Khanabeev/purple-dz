@@ -1,0 +1,4 @@
+.header {
+    padding: var(--padding-container);
+    margin-bottom: 80px;
+}

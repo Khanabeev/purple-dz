@@ -1,0 +1,14 @@
+.favorite {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    border: none;
+}
+
+.favorite:hover {
+    cursor: pointer;
+}

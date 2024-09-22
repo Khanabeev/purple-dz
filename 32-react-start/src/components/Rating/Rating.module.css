@@ -1,0 +1,18 @@
+.rating {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    background: rgba(0, 0, 0, 0.62);
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #FFAD49;
+}
+
+.rating:hover {
+    cursor: pointer;
+}
