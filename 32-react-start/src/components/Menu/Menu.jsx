@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './Menu.module.css';
 import cn from 'classnames';
 
 
-function Menu() {
+function Menu(userInfo) {
+    const [user, setUser] = useState({});
+    useEffect(() => {
+        setUser(userInfo);
+    }, [userInfo]);
     return (
         <ul className={styles['menu']}>
             <li>
@@ -15,6 +19,13 @@ function Menu() {
                     Мои фильмы <span className='menu__badge'>2</span>
                 </a>
             </li>
+
+            {user.isLoggedIn && <li>
+                <a className={cn(styles['menu__item'], styles['menu__item--flex'])} href='#user'>
+                    {user.name}
+                    <img className={styles['menu__login__icon']} src="/icons/user.svg" alt="user"/>
+                </a>
+            </li>}
             <li>
                 <a className={cn(styles['menu__item'], styles['menu__item--flex'])} href='#login'>
                     Войти
