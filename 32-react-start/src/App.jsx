@@ -5,6 +5,11 @@ import Logo from "./components/Logo/Logo.jsx";
 import Menu from "./components/Menu/Menu.jsx";
 import Search from "./components/Search/Search.jsx";
 import FilmList from "./components/FilmList/FilmList.jsx";
+import LoginForm from "./components/LoginForm/LoginForm.jsx";
+import Content from "./layout/Content/Content.jsx";
+import {useEffect, useState} from "react";
+import {useLocalStorage} from "./hooks/use-localstorage.hook.js";
+import {UserContextProvider} from "./context/user.context.jsx";
 
 
 const INIT_DATA = [
@@ -59,18 +64,50 @@ const INIT_DATA = [
 ]
 
 function App() {
+    const [currentUser, setCurrentUser] = useState({name: '', isLoggedIn: false});
+    const [users, setUsers] = useLocalStorage('users');
+
+    useEffect(() => {
+        const isUserExists = users.find(user => user.name === currentUser.name);
+        if (isUserExists) {
+            setUsers([...users.map((item) => {
+                item.isLoggedIn = item.name === currentUser.name;
+                return item;
+            })]);
+        } else {
+            if (currentUser.name.trim().length === 0) {
+                return;
+            }
+            setUsers([...users.map((item) => {
+                item.isLoggedIn = false;
+                return item;
+            }), {name: currentUser.name, isLoggedIn: true}
+            ]);
+        }
+    }, [currentUser]);
+
+    function handleLogin(name) {
+        setCurrentUser({name, isLoggedIn: true});
+    }
 
     return (
-        <div className="app">
-            <Navbar>
-                <Logo/>
-                <Menu/>
-            </Navbar>
-            <Header>
-                <Search/>
-            </Header>
-            <FilmList items={INIT_DATA} />
-        </div>
+        <UserContextProvider>
+            <div className="app">
+                <Navbar>
+                    <Logo/>
+                    <Menu/>
+                </Navbar>
+                <Header>
+                    <Search/>
+                </Header>
+                <Content>
+                    <FilmList items={INIT_DATA}/>
+                    <LoginForm onLogin={handleLogin}/>
+                </Content>
+
+            </div>
+        </UserContextProvider>
+
     );
 }
 

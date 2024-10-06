@@ -1,7 +1,7 @@
 import styles from "./FilmCard.module.css";
 import PropTypes from "prop-types";
 import Rating from "../Rating/Rating.jsx";
-import Favorite from "../../Favorite/Favorite.jsx";
+import Favorite from "../Favorite/Favorite.jsx";
 
 function FilmCard({imgSrc, title, rating}) {
     return (
